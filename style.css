@@ -168,6 +168,7 @@ body {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    align-self: center;
 }
 
 .title .happy {
@@ -194,17 +195,17 @@ body {
     color: var(--color-text-pink);
 }
 
-.title .hat {
+.happy .hat {
     position: absolute;
     width: 130px;
-    right: 45px;
+    right: -45px;
     top: -350px;
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
 }
 
-.title .hat img {
+.happy .hat img {
     width: 100%;
     height: auto;
 }
@@ -785,10 +786,10 @@ body {
             2px 4px 0 var(--color-black);
     }
 
-    .title .hat {
+    .happy .hat {
         width: 85px;
         right: auto;
-        left: calc(50% - 65px);
+        left: -30px;
         top: -350px;
         animation: topHatMobile 4s 7s forwards ease;
     }
