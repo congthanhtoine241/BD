@@ -196,6 +196,7 @@ body {
 
 .title .hat {
     position: absolute;
+    width: 130px;
     right: 45px;
     top: -350px;
     transform: rotate(-40deg);
@@ -203,19 +204,24 @@ body {
     animation: topHat 4s 7s forwards ease;
 }
 
+.title .hat img {
+    width: 100%;
+    height: auto;
+}
+
 @keyframes topHat {
 
     20%,
     30% {
-        top: -30px;
+        top: -40px;
         transform-origin: left;
-        transform: rotate(-40deg);
+        transform: rotate(-35deg);
     }
 
     35%,
     100% {
-        top: -30px;
-        transform: rotate(0deg);
+        top: -40px;
+        transform: rotate(-15deg);
     }
 }
 
@@ -328,13 +334,14 @@ body {
 
 .cricle {
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: -20px;
+    right: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(0);
     animation: scaleCricle 3s 15s forwards ease-in-out;
+    z-index: 5;
 }
 
 @keyframes scaleCricle {
@@ -779,9 +786,9 @@ body {
     }
 
     .title .hat {
+        width: 85px;
         right: auto;
-        left: 50%;
-        transform: translateX(-50%) rotate(-40deg);
+        left: calc(50% - 65px);
         top: -350px;
         animation: topHatMobile 4s 7s forwards ease;
     }
@@ -791,14 +798,13 @@ body {
         20%,
         30% {
             top: -20px;
-            transform-origin: left;
-            transform: translateX(-50%) rotate(-40deg);
+            transform: rotate(-35deg);
         }
 
         35%,
         100% {
             top: -20px;
-            transform: translateX(-50%) rotate(0deg);
+            transform: rotate(-15deg);
         }
     }
 
@@ -852,12 +858,8 @@ body {
     }
 
     .cricle {
-        position: absolute;
-        top: 20px;
-        right: calc(50% - 150px);
-        /* Align relative to the centered image */
-        order: 2;
-        /* Sits next to profile box */
+        top: -10px;
+        right: -10px;
     }
 
     .text__cricle {
