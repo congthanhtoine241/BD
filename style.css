@@ -641,6 +641,8 @@ body {
 .content__letter .left #heart__letter {
     opacity: 0;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 #heart__letter.animationOp {
@@ -1032,6 +1034,7 @@ body {
 
     .content__letter .left #heart__letter {
         width: 110px;
+        height: auto;
     }
 
     .content__letter .left .heart_1 {
