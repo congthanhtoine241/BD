@@ -790,8 +790,8 @@ body {
 
     .happy .hat {
         width: 85px;
-        right: auto;
-        left: -30px;
+        right: -30px;
+        left: auto;
         top: -350px;
         animation: topHatMobile 4s 7s forwards ease;
     }

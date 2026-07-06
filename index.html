@@ -48,7 +48,7 @@
                 </div>
                 <div class="btn">
                     <button id="btn__letter">
-                        Ấn vào đây nè Tờ Hờ ơi🙋
+                        Ấn vào đây nè chị gái🙋
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="name">
                         <i class="fa-solid fa-heart"></i>
-                        <span>Trần Thị Hoa(Bông)</span>
+                        <span>Đặng Tú Uyên</span>
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <div class="balloon_one">
@@ -147,9 +147,9 @@
     </div>
 </body>
 <script>
-    let datetxt = "10-10-2006";
-    let datatxtletter = "Happy birthday Tờ Hờ, chúc Tờ Hờ sinh nhật vui vẻ, tuổi mới thêm niềm vui mới cầu gì được nấy cầu tài được tài cầu tiền được tiền, chúc Tờ Hờ luôn xinh đẹp, gặp nhiều may mắn, kiếm được nhiều tiền và ngày càng thành công hơn trên con đường mình chọn. Đặc biệt là lúc nào cũng phải iu bản thân nhé .Chúc Tờ Hờ sinh nhật dui dẻ🎂.";
-    let titleLetter = "Gửi Tờ Hờ nha Tờ Hờ";
+    let datetxt = "07-07-2005";
+    let datatxtletter = "Tại em không lưu được tấm ảnh em cảm thấy là thích nhất ở chị nên lấy ảnh locket đỡ nha🥲. Em không biết nói gì hơn ngoài việc chúc mừng sinh nhật chị. Bước sang tuổi mới rồi em hi vọng chị, vui vẻ, luôn kiên cường, gặp khó khăn nào chị cũng không bỏ cuộc. Tuổi mới mong rằng những ước nguyện của chị, dù lớn hay nhỏ, sẽ dần trở thành hiện thực theo cách tự nhiên và nhẹ nhàng nhất 🥳🎂";
+    let titleLetter = "Gửi chị nha";
     let charArrDate = datetxt.split('');
     let charArrDateLetter = datatxtletter.split('');
     let charArrTitle = titleLetter.split('');
@@ -190,9 +190,6 @@
             intervalTitle = setInterval(function () {
                 if (currentIndexTitle < charArrTitle.length) {
                     document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
-                    let i = document.createElement("i");
-                    i.className = "fa-solid fa-heart"
-                    document.querySelector(".title__letter").appendChild(i)
                     currentIndexTitle++;
                 }
                 else {
